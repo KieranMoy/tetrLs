@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TetrLs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>TetrLs</h1>
+      <p>A Tetris-style game that only uses L pieces.</p>
+
+      <div class="info-box">
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+        <p><strong>Lines:</strong> <span id="lines">0</span></p>
+      </div>
+
+      <div class="controls">
+        <h2>Controls</h2>
+        <p>← → : Move</p>
+        <p>↑ : Rotate</p>
+        <p>↓ : Drop faster</p>
+        <p>R : Restart</p>
+      </div>
+    </div>
+
+    <div class="game-panel">
+      <canvas id="game" width="300" height="600"></canvas>
+      <div id="gameOver" class="hidden">
+        <h2>Game Over</h2>
+        <p>Press R to restart</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
